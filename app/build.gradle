@@ -4,6 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
     defaultConfig {
+        project.ext.set("archivesBaseName", "GiphySearcher");
         applicationId "com.example.andrushk.giphysearcher"
         minSdkVersion 15
         targetSdkVersion 25
