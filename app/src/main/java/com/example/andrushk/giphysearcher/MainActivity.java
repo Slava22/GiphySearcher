@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new RecyclerViewAdapter(gifs, getApplicationContext(), screenWidth);
+        mAdapter = new RecyclerViewAdapter(gifs, this, screenWidth);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
